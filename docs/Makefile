@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = ../../PlatoDoc-build
 PDFBUILDDIR   = /tmp
-PDF           = ../manual.pdf
+PDF           = ../platodocs.pdf
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -20,12 +20,6 @@ latexpdf:
 	make -C $(PDFBUILDDIR)/latex all-pdf
 	cp $(PDFBUILDDIR)/latex/*.pdf $(PDF)
 	@echo "pdflatex finished; see $(PDF)"
-
-#	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(PDFBUILDDIR)/latex
-#	@echo "Running LaTeX files through pdflatex..."
-#	make -C $(PDFBUILDDIR)/latex all-pdf
-#	cp $(PDFBUILDDIR)/latex/*.pdf $(PDF)
-#	@echo "pdflatex finished; see $(PDF)"
 
 .PHONY: help Makefile
 
