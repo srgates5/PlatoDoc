@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Plato Input Deck &#8212; Plato Documentation 0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Plato Analyze’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Plato Analyze’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Plato Documentation 0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Plato Input Deck</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="plato-input-deck">
+<h1>Plato Input Deck<a class="headerlink" href="#plato-input-deck" title="Permalink to this headline">¶</a></h1>
+<section id="introduction">
+<span id="id1"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This describes the Plato input deck. The Plato input deck contains the “recipe”for running a Plato optimization problem. A Plato problem is either a topology optimiza-tion problem or a shape/CAD parameter optimization problem.  In these problems we aretrying to optimize the toplogy or CAD parameters such that the resulting design meetssome  user-defined  perfromance  objective.   These  types  of  problems  require  a  geometricdefinition of the design domain as well as instructions about what the objectives and con-straints are,  what physics codes will be used to evaluate the objectives and constraints,what optimization algorithm to use, and variuos other parameters.  The geoemtry is gen-erally provided in the form of a finite element mesh and all of the other instructions arecontained in the Plato input deck.  This document will define general concepts used in thesetup of a Plato optimization problem and will then define all of the possible options thatcan be included in the input deck.</p>
+</section>
+<section id="general-concepts">
+<span id="id2"></span><h2>General Concepts<a class="headerlink" href="#general-concepts" title="Permalink to this headline">¶</a></h2>
+<p>Optimization problems can be very complex and require lots of different information.  ThePlato  input  deck  is  designed  to  be  very  general  in  the  way  it  defines  an  optimizationproblem breaking it down into its fundamental pieces that can be combined in differentways to define different kinds of problems.  There are 5 main building blocks upon whichall optimziation problems are defined in Plato.  This section will briefly introduce thesebuilding blocks and describe how they are used to define an optimization problem.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Plato Input Deck</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#general-concepts">General Concepts</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Plato Analyze’s documentation!</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/inputdeck.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Plato Analyze’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Plato Documentation 0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Plato Input Deck</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Sa.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.1.1.
+    </div>
+  </body>
+</html>
